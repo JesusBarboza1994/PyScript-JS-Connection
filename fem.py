@@ -319,7 +319,7 @@ storeDispl = []
 inverse = np.linalg.inv(superMatrix)
 pyscript.write("label2","Matriz de resultados")
 
-print(f"El tiempo que demore fue de {time.time() - start_time} segundos!")
+pyscript.write("label3",f"El tiempo que demore fue de {time.time() - start_time} segundos!")
 solut = np.dot(inverse, coef)
 
 
