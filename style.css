@@ -1,3 +1,15 @@
-/* #tod{
-    visibility: hidden;
-} */
+body{
+    background: black;
+}
+#labeljs{
+    color: red;
+}   
+#label1{
+    color: green;
+}   
+#label2{
+    color: blue;
+}   
+#label3{
+    color: white;
+}
