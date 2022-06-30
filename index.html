@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Ps/Js</title>
 </head>
 <body>
     <div>
         <label id="label1"></label>
         <label id="label2"></label>
+        <label id="label3"></label>
         <label id="labeljs"></label>
     </div>
     <py-env>
@@ -31,14 +32,13 @@
         let label = document.getElementById('label1');
         
         let result1 = label.textContent;
-        //var obj = JSON.parse(result1);
         result1 = result1.replace("[","");
         result1 = result1.replace("]","");
         result1 = result1.split(',');
         console.log(result1[2]);
         document.getElementById("labeljs").innerHTML = "Hola mundo en JS" + result1[2];
-        //document.write(result1[1] + "En JS");
-        }, 6000); //run this after 3 seconds
+        
+        }, 5000); //run this after 5 seconds
         
     </script>
     
